@@ -1,0 +1,458 @@
+/* Defining fonts here: Normal & Italic */
+/* 'url("") = location, whether in local dir or elsewhere */
+
+@font-face {
+    font-family: "Source Sans 3";
+    src: url("../assets/fonts/SourceSans3.ttf")
+        format("truetype");
+
+    font-style: normal;
+    font-weight: 100 700;
+}
+
+@font-face {
+    font-family: "Source Sans 3";
+    src: url("../assets/fonts/SourceSans3-Italic.ttf")
+        format("truetype");
+
+    font-style: italic;
+    font-weight: 100 700;
+}
+
+
+:root { /* Referring to top-level element of the HTML, which is normally '<html>' */
+
+    /* Color properties of content to define a basic page theme */
+    /* Use HEX for colors*/
+
+    --background-color: #FFFFFF; /* Background of the page; white */
+    --text-color: #000000; /* Color of text; black */
+    --accent-color: #0000FF; /* accent color; blue */
+
+
+    /* Setting global defaults for the site with Pico */
+        /* Pico automatically follows system/browser color preference*/
+            /* Set the system/browser theme to the type of theme you want to develop. (*/
+
+    --pico-font-family: "Source Sans 3", sans-serif; /* Global font */
+
+    --pico-background-color: var(--background-color);
+    --pico-color: var(--text-color);
+    --pico-primary: var(--accent-color);
+}
+
+
+/* Body */
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+/* Header */
+
+header {
+    padding: 1rem;
+}
+
+
+/* Navigation */
+
+nav {
+    padding: 1rem;
+}
+
+nav a {
+    color: var(--accent-color);
+}
+
+
+/* Main */
+
+main {
+    padding: 1rem;
+}
+
+
+/* Section */
+
+section {
+    margin-bottom: 2rem;
+}
+
+
+/* Article */
+
+article {
+    padding: 1rem;
+}
+
+
+/* Aside */
+
+aside {
+    padding: 1rem;
+}
+
+
+/* Headings */
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+
+/* Paragraph */
+
+p {
+    line-height: 1.5;
+}
+
+
+/* Strong */
+
+strong {
+    font-weight: 700;
+}
+
+
+/* Emphasis */
+
+em {
+    font-style: italic;
+}
+
+
+/* Span */
+
+span {
+    color: inherit;
+}
+
+
+/* Small */
+
+small {
+    font-size: 0.875rem;
+}
+
+
+/* Mark */
+
+mark {
+    background-color: #FFFF00;
+    color: #000000;
+}
+
+
+/* Subscript */
+
+sub {
+    font-size: 0.75em;
+}
+
+
+/* Superscript */
+
+sup {
+    font-size: 0.75em;
+}
+
+
+/* Abbreviation */
+
+abbr {
+    text-decoration: underline;
+}
+
+
+/* Time */
+
+time {
+    color: inherit;
+}
+
+
+/* Links */
+
+a {
+    color: var(--accent-color);
+}
+
+
+/* Images */
+
+img {
+    max-width: 100%;
+}
+
+
+/* Figure */
+
+figure {
+    margin: 1rem 0;
+}
+
+
+/* Figure Caption */
+
+figcaption {
+    font-size: 0.875rem;
+}
+
+
+/* Unordered List */
+
+ul {
+    padding-left: 2rem;
+}
+
+
+/* Ordered List */
+
+ol {
+    padding-left: 2rem;
+}
+
+
+/* List Item */
+
+li {
+    margin-bottom: 0.25rem;
+}
+
+
+/* Description List */
+
+dl {
+    margin-bottom: 1rem;
+}
+
+
+/* Description Term */
+
+dt {
+    font-weight: 700;
+}
+
+
+/* Description */
+
+dd {
+    margin-left: 1rem;
+}
+
+
+/* Blockquote */
+
+blockquote {
+    padding-left: 1rem;
+    border-left: 4px solid var(--accent-color);
+}
+
+
+/* Short Quote */
+
+q {
+    font-style: italic;
+}
+
+
+/* Citation */
+
+cite {
+    font-style: italic;
+}
+
+
+/* Inline Code */
+
+code {
+    font-family: monospace;
+}
+
+
+/* Preformatted Text */
+
+pre {
+    padding: 1rem;
+}
+
+
+/* Keyboard Input */
+
+kbd {
+    font-family: monospace;
+}
+
+
+/* Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* Table Head */
+
+thead {
+    font-weight: 700;
+}
+
+
+/* Table Body */
+
+tbody {
+    color: inherit;
+}
+
+
+/* Table Footer */
+
+tfoot {
+    font-weight: 700;
+}
+
+
+/* Table Row */
+
+tr {
+    border-bottom: 1px solid var(--text-color);
+}
+
+
+/* Table Heading */
+
+th {
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: 700;
+}
+
+
+/* Table Data */
+
+td {
+    padding: 0.75rem;
+    text-align: left;
+}
+
+
+/* Form */
+
+form {
+    margin-bottom: 1rem;
+}
+
+
+/* Label */
+
+label {
+    font-weight: 600;
+}
+
+
+/* Input */
+
+input {
+    font-family: inherit;
+}
+
+
+/* Select */
+
+select {
+    font-family: inherit;
+}
+
+
+/* Option */
+
+option {
+    color: var(--text-color);
+}
+
+
+/* Text Area */
+
+textarea {
+    font-family: inherit;
+}
+
+
+/* Button */
+
+button {
+    font-family: inherit;
+}
+
+
+/* Details */
+
+details {
+    margin-bottom: 1rem;
+}
+
+
+/* Summary */
+
+summary {
+    font-weight: 600;
+}
+
+
+/* Progress */
+
+progress {
+    width: 100%;
+}
+
+
+/* Meter */
+
+meter {
+    width: 100%;
+}
+
+
+/* Horizontal Rule */
+
+hr {
+    border-color: var(--text-color);
+}
+
+
+/* Footer */
+
+footer {
+    padding: 1rem;
+}
+
+
+/* Address */
+
+address {
+    font-style: italic;
+}
